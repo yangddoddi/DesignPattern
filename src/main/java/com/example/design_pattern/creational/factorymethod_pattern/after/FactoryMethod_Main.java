@@ -10,6 +10,10 @@ public class FactoryMethod_Main {
         Animal2 rabbit = new RabbitMaker().createAnimal("해피");
         Animal2 turtle = new TurtleMaker().createAnimal("초롱이");
 
+        AnimalMaker2 animalMaker2 = new AnimalMaker2();
+        animalMaker2.createAnimal("해피", "turtle");
+        animalMaker2.createAnimal("맘보","rabbit");
+
         rabbit.run();
         turtle.run();
 
