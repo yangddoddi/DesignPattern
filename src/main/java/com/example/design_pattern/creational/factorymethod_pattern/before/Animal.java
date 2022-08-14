@@ -10,7 +10,6 @@ public class Animal {
 
     public Animal(String name, String species, String color) {
         if (name == null || name.isBlank()) throw new IllegalArgumentException("유효하지 않은 이름");
-        if (!species.equals("turtle") && !species.equals("rabbit")) throw new IllegalArgumentException("유효하지 않은 개체");
     }
 
     public void run(String target) {
