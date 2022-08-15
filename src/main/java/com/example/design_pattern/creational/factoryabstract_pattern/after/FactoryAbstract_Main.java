@@ -7,6 +7,10 @@ import com.example.design_pattern.creational.factoryabstract_pattern.after.facto
 import com.example.design_pattern.creational.factoryabstract_pattern.after.factoryM.WarriorMaker;
 import com.example.design_pattern.creational.factoryabstract_pattern.before.Character;
 
+import java.util.Iterator;
+import java.util.LinkedList;
+import java.util.ListIterator;
+
 public class FactoryAbstract_Main {
     public static void main(String[] args) {
         // 기존
@@ -18,5 +22,8 @@ public class FactoryAbstract_Main {
         //추상메서드
         Factory_Method characterFactory = new WarriorMaker();
         CharacterV2 hehe = characterFactory.createOrder("힝힝이", equipment);
+
+        LinkedList list = new LinkedList();
+        Iterator iterator = list.iterator();
     }
 }

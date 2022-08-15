@@ -3,6 +3,6 @@ package com.example.design_pattern.creational.factoryabstract_pattern.after.abst
 import lombok.ToString;
 
 @ToString
-public class BaseShield implements Shield {
+public class BaseShield extends BaseEquipmentFactory implements Shield {
     String name = "평범한 방패";
 }
