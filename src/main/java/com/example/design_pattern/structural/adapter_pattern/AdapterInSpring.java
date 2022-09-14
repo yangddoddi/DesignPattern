@@ -2,6 +2,7 @@ package com.example.design_pattern.structural.adapter_pattern;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
 public class AdapterInSpring {
@@ -16,4 +17,8 @@ public class AdapterInSpring {
     public String getTest() {
         return "tt";
     }
+
+    @ResponseBody
+    @GetMapping("/api/test")
+    public String getTest2() { return "tt";}
 }
