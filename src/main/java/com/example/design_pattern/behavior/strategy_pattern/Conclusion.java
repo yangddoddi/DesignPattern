@@ -8,6 +8,10 @@ public class Conclusion {
     *
     * 대표 예시
     * - Comparator
+    * - 스프링의 거의 모든 것들이 전략패턴이다 ApplicationContext의 구현체가 여러가지임
+    * - BeanDefinitionParser
+    * - PlatformTansactionManager
+    * - CacheManager
     *
     * 장점
     * - 새로운 전략을 추가하더라도 기존 코드를 변경하지 않는다.
